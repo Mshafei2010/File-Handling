@@ -237,7 +237,7 @@ Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunc
 ## Json Description
 This Python script demonstrates how to handle JSON data by converting between JSON and Python dictionary formats. It includes examples of loading JSON data into a Python dictionary and dumping a Python dictionary to a JSON formatted string.
 
-## Overview
+## Json Overview
 1. **Convert from JSON to Python Dictionary**:
    - The script takes a JSON formatted string and converts it into a Python dictionary using the `json.loads()` function.
    - The values of specific keys are then printed to the console.
