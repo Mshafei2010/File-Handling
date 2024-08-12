@@ -6,7 +6,7 @@ import os
 Create File
 """
 #Create file
-create_file = open("D:/Courses/given/nefham/projects/File Handling/createFile.txt", "x")
+create_file = open("PUT YOUR FILE PATH/createFile.txt", "x")
 
 create_file.close()
 
@@ -15,7 +15,7 @@ Write File
 """
 
 #Create file
-write_file = open("D:/Courses/given/nefham/projects/File Handling/writeFile.txt", "w")
+write_file = open("PUT YOUR FILE PATH/writeFile.txt", "w")
 Lines = ["This is Mohamed Shafei\n" , "Graduated from Computer Science\n" ,"Python Developer\n" ]
 
 #Write in file
@@ -29,7 +29,7 @@ write_file.close()
 Read File
 """
 
-read_file = open("D:/Courses/given/nefham/projects/File Handling/writeFile.txt", "r")
+read_file = open("PUT YOUR FILE PATH/writeFile.txt", "r")
 
 #read part
 print(read_file.read(5)) # print (Info:) 
@@ -47,11 +47,11 @@ print(read_file.readlines())
 Read and Write File
 """
 #Create File
-read_write_file = open("D:/Courses/given/nefham/projects/File Handling/readwriteFile.txt", "w")
+read_write_file = open("PUT YOUR FILE PATH/readwriteFile.txt", "w")
 read_write_file.close()
 
 #Read and write in file
-read_write_file = open("D:/Courses/given/nefham/projects/File Handling/readwriteFile.txt", "r+")
+read_write_file = open("PUT YOUR FILE PATH/readwriteFile.txt", "r+")
 
 #add Data
 read_write_file.write("This is my info\n")
@@ -75,19 +75,19 @@ read_write_file.close()
 Delete File
 """
 
-os.remove("D:/Courses/given/nefham/projects/File Handling/createFile.txt")
+os.remove("PUT YOUR FILE PATH/createFile.txt")
 
 """
 append file
 """
 # Create file and write data in
-append_file=open("D:/Courses/given/nefham/projects/File Handling/appendFile.txt","w")
+append_file=open("PUT YOUR FILE PATH/appendFile.txt","w")
 append_file.write("this file contain data and we will append on it\n")
 append_file.close()
 
 
 # Append on file
-append_file=open("D:/Courses/given/nefham/projects/File Handling/appendFile.txt","a+")
+append_file=open("PUT YOUR FILE PATH/appendFile.txt","a+")
 
 # Append Data 
 append_file.write("We appended Hello")
