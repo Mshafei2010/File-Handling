@@ -210,7 +210,7 @@ for row in rows[:100]:
     counter += 1
 ```
 
-## csv Example 
+## csvExample 
 
 ```
 Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome	
