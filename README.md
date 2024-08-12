@@ -210,7 +210,7 @@ for row in rows[:100]:
     counter += 1
 ```
 
-## Example 
+## csv Example 
 
 ```
 Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome	
@@ -228,11 +228,11 @@ Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunc
 ```
 
 ## Key
-- [Description](#description)
-- [Overview](#overview)
-- [Output](#output)
-- [Code](#code)
-- [Example](#example)
+- [Description](#csvdescription)
+- [Overview](#csvoverview)
+- [Output](#csvoutput)
+- [Code](#csvcode)
+- [Example](#csvexample)
 
 ---
 
