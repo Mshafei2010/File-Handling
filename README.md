@@ -1,4 +1,15 @@
-# File Handling in Python
+Here’s the README file with the updated key section including the new addition for CSV File Handling:
+
+---
+
+## Key
+- [Text File Handling in Python](#text-file-handling-in-python)
+- [CSV File Handling in Python](#csv-file-handling-in-python)
+- [JSON File Handling in Python](#json-file-handling-in-python)
+
+---
+
+# Text File Handling in Python
 
 ## Description
 This Python script demonstrates various file handling operations including creating, writing, reading, appending, and deleting files. The operations are performed on text files, with each section of the script handling a different aspect of file management.
@@ -148,4 +159,81 @@ This
 
 ---
 
-This README provides clear instructions and explanations for anyone using or reviewing the file handling script.
+# CSV File Handling in Python
+
+## Description
+This Python script allows users to read and display the contents of a CSV file. It reads the file, extracts the field names (headers), and prints the first 100 rows of the data with a row counter.
+
+## Overview
+1. The script opens the CSV file located at the specified file path.
+2. The script performs the following operations:
+   - **Field Extraction:** Extracts the field names (headers) from the first row of the CSV file.
+   - **Row Extraction:** Reads and stores each row of data from the CSV file.
+   - **Data Display:** Displays the first 100 rows of the data along with the corresponding field names, with each row preceded by a counter.
+3. The output is printed to the console.
+
+## Output
+
+- **After running the script, you will see:**
+    - Field names (headers) printed in a tab-separated format.
+    - The first 100 rows of the CSV file printed, with each value tab-separated and prefixed by a row counter.
+
+## Code
+```python
+import csv
+
+file = open("PUT YOUR FILE PATH/diabetes.csv", "r")
+
+fields = []
+rows = []
+
+with file as csvfile:
+    csvreader = csv.reader(file)
+
+    # extracting field names through first row
+    fields = next(csvreader)
+    
+    # extracting each data row one by one
+    for row in csvreader:
+        rows.append(row)
+
+for label in fields:
+    print(label, end="\t")
+print("\n")
+
+counter = 1
+for row in rows[:100]:
+    print(counter)
+    for col in row:
+        print("  ", col, end="\t\t")
+    print("\n")
+    counter += 1
+```
+
+## Example 
+
+```
+Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome	
+
+1
+  6  		148  		72  		35  		0  		33.6  		0.627  		50  		1		
+
+2
+  1  		85  		66  		29  		0  		26.6  		0.351  		31  		0		
+
+... (additional rows)
+
+100
+  2  		90  		68  		42  		0  		38.2  		0.503  		27  		0		
+```
+
+## Key
+- [Description](#description)
+- [Overview](#overview)
+- [Output](#output)
+- [Code](#code)
+- [Example](#example)
+
+---
+
+This README file structure includes the proper key section, making navigation between the different README files easy.
