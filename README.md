@@ -161,10 +161,10 @@ This
 
 # CSV File Handling in Python
 
-## Description
+## CSV Description
 This Python script allows users to read and display the contents of a CSV file. It reads the file, extracts the field names (headers), and prints the first 100 rows of the data with a row counter.
 
-## Overview
+## CSV Overview
 1. The script opens the CSV file located at the specified file path.
 2. The script performs the following operations:
    - **Field Extraction:** Extracts the field names (headers) from the first row of the CSV file.
@@ -172,13 +172,13 @@ This Python script allows users to read and display the contents of a CSV file. 
    - **Data Display:** Displays the first 100 rows of the data along with the corresponding field names, with each row preceded by a counter.
 3. The output is printed to the console.
 
-## Output
+## CSV Output
 
 - **After running the script, you will see:**
     - Field names (headers) printed in a tab-separated format.
     - The first 100 rows of the CSV file printed, with each value tab-separated and prefixed by a row counter.
 
-## Code
+## CSV Code
 ```python
 import csv
 
@@ -210,7 +210,7 @@ for row in rows[:100]:
     counter += 1
 ```
 
-## csvExample 
+## CSV Example 
 
 ```
 Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome	
@@ -228,11 +228,11 @@ Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunc
 ```
 
 ## Key
-- [Description](#csvdescription)
-- [Overview](#csvoverview)
-- [Output](#csvoutput)
-- [Code](#csvcode)
-- [Example](#csvexample)
+- [Description](#csv-description)
+- [Overview](#csv-overview)
+- [Output](#csv-output)
+- [Code](#csv-code)
+- [Example](#csv-example)
 
 ---
 
