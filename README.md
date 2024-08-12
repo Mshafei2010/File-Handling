@@ -1,7 +1,3 @@
-Here's the README file for JSON File Handling, added to the end of the previous README file:
-
----
-
 ## Key
 - [Text File Handling in Python](#text-file-handling-in-python)
 - [CSV File Handling in Python](#csv-file-handling-in-python)
