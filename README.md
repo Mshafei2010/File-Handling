@@ -1,4 +1,4 @@
-Here’s the README file with the updated key section including the new addition for CSV File Handling:
+Here's the README file for JSON File Handling, added to the end of the previous README file:
 
 ---
 
@@ -154,8 +154,8 @@ This
 - [Description](#description)
 - [Overview](#overview)
 - [Output](#output)
-- [Code](#Code)
-- [Example](#Example)
+- [Code](#code)
+- [Example](#example)
 
 ---
 
@@ -228,12 +228,93 @@ Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunc
 ```
 
 ## Key
-- [Description](#csv-description)
-- [Overview](#csv-overview)
-- [Output](#csv-output)
-- [Code](#csv-code)
-- [Example](#csv-example)
+- [Description](#CSV-description)
+- [Overview](#CSV-overview)
+- [Output](#CSV-output)
+- [Code](#CSV-code)
+- [Example](#CSV-example)
 
 ---
 
-This README file structure includes the proper key section, making navigation between the different README files easy.
+# JSON File Handling in Python
+
+## Json Description
+This Python script demonstrates how to handle JSON data by converting between JSON and Python dictionary formats. It includes examples of loading JSON data into a Python dictionary and dumping a Python dictionary to a JSON formatted string.
+
+## Overview
+1. **Convert from JSON to Python Dictionary**:
+   - The script takes a JSON formatted string and converts it into a Python dictionary using the `json.loads()` function.
+   - The values of specific keys are then printed to the console.
+
+2. **Convert from Python Dictionary to JSON**:
+   - The script defines a Python dictionary and converts it to a JSON formatted string using the `json.dumps()` function.
+   - The JSON data is printed with indentation for readability and keys sorted.
+
+## Json Output
+
+- **After running the script, you will see:**
+    - The values of specific keys from the JSON data printed to the console.
+    - A formatted JSON string output from the Python dictionary, with sorted keys and indentation.
+
+## Json Code
+```python
+import json
+
+"""
+Convert from Json to Python Dictionary
+"""
+
+# Sample Json Data
+JsonData = '{"userId": 1,"id": 1,"title": "delectus aut autem","completed": false}'
+
+# Conversion
+data = json.loads(JsonData)
+
+# Output Data
+print(data["userId"])
+print(data["title"])
+print(data["completed"])
+
+print("\n----------\n")
+
+"""
+Convert from Python Dictionary to Json
+"""
+
+# Sample Dictionary Data
+rawData = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+
+# Convert data to Json with 4 indent before each key also sort keys
+JSON = json.dumps(rawData, indent=4, sort_keys=True)
+
+# Output Json
+print(JSON)
+```
+
+## Json Example 
+
+```
+1
+delectus aut autem
+False
+
+
+
+----------
+{
+    "age": 30,
+    "city": "New York",
+    "name": "John"
+}
+```
+
+## Key
+- [Description](#Json-description)
+- [Overview](#Json-overview)
+- [Output](#Json-output)
+- [Code](#Json-code)
+- [Example](#Json-example)
